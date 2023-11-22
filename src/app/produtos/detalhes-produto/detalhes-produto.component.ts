@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { CarrinhoService } from 'src/app/carrinho.service';
 import { NotificacaoService } from 'src/app/notificacao.service';
@@ -11,7 +11,7 @@ import { ProdutosService } from 'src/app/produtos.service';
   styleUrls: ['./detalhes-produto.component.css']
 })
 export class DetalhesProdutoComponent {
-  produto?: IProduto;
+  produto: IProduto | undefined;
   quantidade = 1;
   
   constructor(
@@ -19,7 +19,7 @@ export class DetalhesProdutoComponent {
     private route: ActivatedRoute,
     private notificacaoService: NotificacaoService,
     private carrinhoService: CarrinhoService
-  ) { } 
+  ) { }
   
   ngOnInit(): void{
   const routeParams = this.route.snapshot.paramMap;

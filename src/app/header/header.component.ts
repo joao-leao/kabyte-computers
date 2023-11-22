@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { CarrinhoService } from '../carrinho.service';
+import { NotificacaoService } from 'src/app/notificacao.service';
 
 @Component({
   selector: 'app-header',
@@ -9,6 +10,11 @@ import { CarrinhoService } from '../carrinho.service';
 export class HeaderComponent {
 
   constructor(
-    public carrinhoService: CarrinhoService
+    public carrinhoService: CarrinhoService,
+    private notificacaoService: NotificacaoService
   ) { }
+
+  notificarLink(){
+    this.notificacaoService.notificar2("Coloquei somente o GitHub e o Linkedin, os ícones do facebook e Instagram são só exemplos.");
+  }
 }

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap');
+
 .main-header {    
     padding: 10px 0px;
     display: flex;
@@ -15,13 +17,21 @@
 .main-header__title--blue {
     color: var(--blue);
     color: blue;
-    font-size:60px;
+    font-size:70px;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(45deg, #1E90FF,#00BFFF,#4169E1 );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .main-header__title--orange {
     color: var(--orange);
     color: orange;
-    font-size:60px;
+    font-size:70px;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(45deg, #D2691E,#F4A460,#CD853F );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .main-header__menu ul {

@@ -1,8 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { IProduto } from '../produtos';
 import { ProdutosService } from '../produtos.service';
-import { ProdutosModule } from './produtos.module';
 
 @Component({
   selector: 'app-produtos',
@@ -14,7 +13,6 @@ export class ProdutosComponent {
   
   constructor(
     private produtosService: ProdutosService,
-    private produtoId: ProdutosModule,
     private route: ActivatedRoute
   ) { }
 
