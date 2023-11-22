@@ -1,5 +1,7 @@
 # Kabyte
 
+Primeiro projeto, feito no programa StartCapgemini, o site aborda principais regras de negócios em um site de vendas focado em front-end, a parte do back-end não foi feita porque não era o foco, o site não está responsivo mas pretendo mexer no futuro, foi usado o framework Angular 16, com sua linguagem em TypeScript.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.5.
 
 ## Development server
